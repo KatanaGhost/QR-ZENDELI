@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Audio Playback</title>
+    <style>
+        body {{
+            margin: 0;
+            padding: 0;
+            background-image: url('avni.PNG');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-shadow: 1px 1px 3px black;
+        }}
+        button {{
+            padding: 1em 2em;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            cursor: pointer;
+        }}
+        button:hover {{
+            background-color: rgba(0, 0, 0, 0.8);
+        }}
+    </style>
+</head>
+<body>
+    <h2>Tryck för att spela upp ljudet</h2>
+    <button onclick="document.getElementById('audio').play()">▶️ Spela</button>
+    <audio id="audio">
+        <source src="edited_audio.mp3" type="audio/mpeg">
+        Din webbläsare stöder inte ljuduppspelning.
+    </audio>
+</body>
+</html>
